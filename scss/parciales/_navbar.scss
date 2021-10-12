@@ -1,0 +1,45 @@
+@import "./responsive";
+
+.header{
+    background-color: $beige;
+    border-bottom: solid lightgrey 2px ;
+    &__navbar{
+        padding: 1rem 0px;
+    }
+    &__logo{
+        background-color: transparent;
+    }
+}
+
+.navbar-nav .dropdown-menu{
+    position: absolute;
+
+    @include tablet{
+            margin-left: 100px;
+    }
+}
+
+.navbar-expand-lg .navbar-collapse{
+    @include minLaptop{
+        max-width: 370px;
+    }
+}
+
+.dropdown-toggle::after{
+    vertical-align: .155em;
+}
+
+.navbar-brand img{
+    width: 140px;
+    @include movil{
+        width: 100px;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: burlywood;
+}
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
+    justify-content: space-around;
+}

@@ -1,0 +1,31 @@
+@import "./colores";
+@import "./responsive";
+
+
+.error{
+    background-color: $grisFondo;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__titulo{
+        font-size: 5rem;
+    }
+    &__imagen{
+        filter: brightness(1.1);
+        mix-blend-mode: multiply;
+        width: 400px;
+        height: 700px;
+    }
+    &__boton{
+        font-size: 2rem;
+    margin: 0px;
+    text-align: center;
+    background-image: url(../img/img-noise-100x26.png);
+    border-radius: 27px 27px 27px 27px;
+    padding: 5px;
+
+    }
+    
+}
+
+

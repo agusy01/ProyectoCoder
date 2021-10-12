@@ -1,0 +1,167 @@
+@import "./colores";
+@import "./responsive";
+
+
+/* SECTION 1 */
+.section{
+    margin: 3% 0px;
+    &__div{
+        display: flex;
+        width: 320px;
+        justify-content: center;
+        padding: 0px;
+        @include movil{
+            margin: 2px;
+        }
+        @include movilS{
+            min-width: 290px;
+            margin-bottom: 10px;
+        }
+        &__logo{
+            height: 64px;
+            @include movil{
+                max-width: none;
+            }
+        }
+        &__texto{
+            padding: 1px;
+            article{
+                @include movil{ 
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    &__div div{
+        padding-left: 10px;
+    }
+    & h3{
+        @include tablet{
+            font-size: calc(1.1rem + .1vw);
+        }
+    }
+}
+
+.row{
+    @include movil{
+        margin: 0px;
+    }
+}
+
+.columna div{
+    padding: 30px;
+    text-align: left;
+}
+
+.columna div article{
+    margin-bottom: 30px;
+    @include tablet{
+        font-size: 13px
+    }
+}
+
+.columna div a{
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.columna div h3{
+    font-size: 1.4rem;
+    @include tablet{
+        font-size: calc(1.1rem + .1vw)
+    }
+}
+
+.gridNuevo div img{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 159px;
+    height: 191px;
+}
+
+.columna{
+    background-color: $violeta;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 27px 27px 27px 27px;
+    width: 30%;
+    @include tablet{
+        width: 250px;
+        margin: 15px;
+    }
+}
+
+.container{
+    padding-bottom: 50px;
+}
+
+.gridNuevo{
+    justify-content: space-evenly;
+    display: flex;
+    margin: 0px 10%;
+    @include tablet{
+            flex-wrap: wrap;
+    }
+}
+
+/* SECTION 2 */
+
+.grid div img{
+    width: 250px;
+    height: 250px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.grid{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 10%;
+    @include laptop{
+        margin: 50px 5%;
+    }
+    & div{
+        @include laptop{
+            padding: 0px 10px;
+        }
+    }
+    & div a img{
+        @include laptop{
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+.sectionDos{
+    padding: 1px;
+    @include tablet{
+        display: none;
+    }
+    &__containerDos{
+        margin-top: 10%;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__categoria{
+        font-size: 1rem;
+        color: black;
+    }
+    &__nombrePrecio{
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 2px 0px;
+    }
+    &__nombrePrecio:hover{
+        color:lightpink;
+    }
+    &__containerDos h2{
+        font-weight: bold;
+    }
+}

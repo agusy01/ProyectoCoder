@@ -1,0 +1,24 @@
+@import "./colores";
+@import "./responsive";
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 10%;
+    &__nav ul{
+        list-style: none;
+        padding: 0px;
+        font-size: 0.8rem;
+    }
+    &__nav h4{
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    &__nav ul li a{
+        color: black;
+    }
+    &__logo{
+        width: 100px;
+    }
+}

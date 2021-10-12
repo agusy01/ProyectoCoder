@@ -1,0 +1,52 @@
+@import "./colores";
+@import "./responsive";
+
+div main article div {
+    width: 100px;
+    margin: 0px;
+    text-align: center;
+    background-image: url(../img/img-noise-100x26.png);
+    border-radius: 27px 27px 27px 27px;
+}
+
+article{
+    @include tablet{
+        max-width: 300px;
+    }
+    @include movil{
+        max-width: 200px;
+    }
+}
+
+
+
+div main article div:hover{
+    transform: scale(1.1);
+}
+
+.main{
+    height: 300px;
+    width: 500px;
+    margin-left: 15%;
+    padding-top: 50px;
+    &__shop{
+        color: beige;
+        font-size: 1rem;
+    }
+    &__shop:hover{
+        color: rgb(247, 247, 238);
+    }
+    &__titulo{
+        font-size: 4rem;
+        letter-spacing: 4px;
+        
+        @include tablet{
+            font-size: 8vw;
+        }
+    }
+}
+
+.row>* {
+    padding-right: calc(var(--bs-gutter-x) * 2.3);
+}
+

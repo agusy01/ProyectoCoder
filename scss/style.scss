@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+@import "./parciales/colores";
+@import "./parciales/navbar";
+@import "./parciales/main";
+@import "./parciales/section";
+@import "./parciales/footer";
+@import "./parciales/store";
+@import "./parciales/aboutUs";
+@import "./parciales/contactUs";
+@import "./parciales/error";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.1rem;
+    background-color: $grisFondo;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Fondo header y div */
+
+.imgFondo  {
+    background-image: url(../img/planta.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    border-radius: 0px 0px 70px 70px;
+    width: 100%
+    
+}
+
+
+
+
+
+

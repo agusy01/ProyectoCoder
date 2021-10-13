@@ -1,0 +1,40 @@
+@import "./colores";
+@import "./responsive";
+
+
+.imgStoreOut{
+    width: 25rem;
+    border-radius: 33px 33px 33px 33px;
+    
+    @include laptop{
+        width: 23rem;
+    }
+
+    @include movil {
+        width: 17rem;
+    }
+
+}
+
+.mainArreglo{
+    padding: 100px;
+    max-width: 1500px;
+    margin: auto;
+    flex-wrap: wrap;
+    @include laptop{
+        padding:30px;
+    }
+}
+
+.mainArreglo__div{
+    
+    @include laptop{
+        padding: 30px;
+    }
+    @include tablet{
+        padding: 30px;
+    }
+}
+
+
+

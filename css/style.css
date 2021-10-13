@@ -420,6 +420,33 @@ ul li .product-details p {
     border-radius: 27px 27px 27px 27px;
     padding: 5px; }
 
+.imgStoreOut {
+  width: 25rem;
+  border-radius: 33px 33px 33px 33px; }
+  @media screen and (width: 1024px) {
+    .imgStoreOut {
+      width: 23rem; } }
+  @media screen and (max-width: 425px) {
+    .imgStoreOut {
+      width: 17rem; } }
+
+.mainArreglo {
+  padding: 100px;
+  max-width: 1500px;
+  margin: auto;
+  flex-wrap: wrap; }
+  @media screen and (width: 1024px) {
+    .mainArreglo {
+      padding: 30px; } }
+
+@media screen and (width: 1024px) {
+  .mainArreglo__div {
+    padding: 30px; } }
+
+@media screen and (max-width: 768px) {
+  .mainArreglo__div {
+    padding: 30px; } }
+
 * {
   padding: 0px;
   margin: 0px;

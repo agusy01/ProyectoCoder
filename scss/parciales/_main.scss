@@ -16,6 +16,10 @@ article{
     @include movil{
         max-width: 200px;
     }
+
+    @include minLaptop{
+        max-width: 400px;
+    }
 }
 
 
@@ -26,7 +30,6 @@ div main article div:hover{
 
 .main{
     height: 300px;
-    width: 500px;
     margin-left: 15%;
     padding-top: 50px;
     &__shop{

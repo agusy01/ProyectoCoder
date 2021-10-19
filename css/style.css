@@ -47,12 +47,15 @@ div main article div {
   article {
     max-width: 200px; } }
 
+@media screen and (min-width: 1024px) {
+  article {
+    max-width: 400px; } }
+
 div main article div:hover {
   transform: scale(1.1); }
 
 .main {
   height: 300px;
-  width: 500px;
   margin-left: 15%;
   padding-top: 50px; }
   .main__shop {

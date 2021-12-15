@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "nombre": "Succulent",
+        "precio": "8.00",
+        "img": "suculenta 3.png"
+    },
+    {
+        "id": 2,
+        "nombre": "beautiful Succulent",        
+        "precio": "15.00",
+        "img": "suculenta 2.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Mini Succulent",
+        "precio": "5.00",
+        "img": "suculenta 1.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Variety Succulent",
+        "precio": "16.00",
+        "img": "suculenta 4.png"
+    },
+    {
+        "id": 5,
+        "nombre": "Pretty Succulent",
+        "precio": "6.00",
+        "img": "suculenta 8.png"
+    },
+    {
+        "id": 6,
+        "nombre": "Shrek Succulent",
+        "precio": "8.00",
+        "img": "suculenta 6.png"
+    },
+    {
+        "id": 7,
+        "nombre": "Flower Succulent",
+        "precio": "10.00",
+        "img": "suculenta 5.png"
+    },
+    {
+        "id": 8,
+        "nombre": "Tree Succulent",
+        "precio": "7.00",
+        "img": "suculenta 9.png"
+    },
+    {
+        "id": 9,
+        "nombre": "Succulent King",
+        "precio": "4.00",
+        "img": "suculenta 7.png"
+    },
+    {
+        "id": 10,
+        "nombre": "Tinty Succulent",
+        "precio": "10.00",
+        "img": "suculenta 10.png"
+    },
+    {
+        "id": 11,
+        "nombre": "Star Cactus",
+        "precio": "10.00",
+        "img": "cactus 4.png"
+    },
+    {
+        "id": 12,
+        "nombre": "Pinky Cactus",        
+        "precio": "12.00",
+        "img": "cactus 2.png"
+    },
+    {
+        "id": 13,
+        "nombre": "Flower Cactus",
+        "precio": "9.00",
+        "img": "cactus 3.png"
+    },
+    {
+        "id": 14,
+        "nombre": "Gentle Cactus",
+        "precio": "7.00",
+        "img": "cactus 5.png"
+    },
+    {
+        "id": 15,
+        "nombre": "Prism Cactus",
+        "precio": "9.00",
+        "img": "cactus 6.png"
+    },
+    {
+        "id": 16,
+        "nombre": "Light Cactus",
+        "precio": "6.00",
+        "img": "cactus 7.png"
+    },
+    {
+        "id": 17,
+        "nombre": "Mini Cactus",
+        "precio": "3.00",
+        "img": "cactus 8.png"
+    },
+    {
+        "id": 18,
+        "nombre": "Prety Cactus",
+        "precio": "5.00",
+        "img": "cactus 9.png"
+    },
+    {
+        "id": 19,
+        "nombre": "Skull Cactus",
+        "precio": "12.00",
+        "img": "cactus 10.png"
+    },
+    {
+        "id": 20,
+        "nombre": "Windy Cactus",
+        "precio": "10.00",
+        "img": "cactus 11.png"
+    },
+    {
+        "id": 21,
+        "nombre": "Garden Tools Kit",
+        "precio": "15.00",
+        "img": "accesorio 1.png"
+    },
+    {
+        "id": 22,
+        "nombre": "Amazing Shovel",        
+        "precio": "30.00",
+        "img": "accesorio 2.png"
+    },
+    {
+        "id": 23,
+        "nombre": "Wild Rake",
+        "precio": "25.00",
+        "img": "accesorio 3.png"
+    },
+    {
+        "id": 24,
+        "nombre": "Peal",
+        "precio": "20.00",
+        "img": "accesorio 4.png"
+    },
+    {
+        "id": 25,
+        "nombre": "Watering Can",
+        "precio": "8.00",
+        "img": "accesorio 5.png"
+    },
+    {
+        "id": 26,
+        "nombre": "Garden Hoe",
+        "precio": "10.00",
+        "img": "accesorio 6.png"
+    },
+    {
+        "id": 27,
+        "nombre": "Garden Gloves",
+        "precio": "7.00",
+        "img": "accesorio 7.png"
+    },
+    {
+        "id": 28,
+        "nombre": "Wheelbarrow",
+        "precio": "40.00",
+        "img": "accesorio 8.png"
+    },
+    {
+        "id": 29,
+        "nombre": "Hose",
+        "precio": "12.00",
+        "img": "accesorio 10.png"
+    },
+    {
+        "id": 30,
+        "nombre": "Wooden Pot",
+        "precio": "10.00",
+        "img": "accesorio 9.png"
+    }
+]

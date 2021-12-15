@@ -1,6 +1,11 @@
 @import "./responsive";
 
-
+#botonCarrito {
+    border: 0;
+    margin-left: 10px;
+    mix-blend-mode: multiply;
+    filter: brightness(1.1);
+}
 
 .header{
     background-color: $beige;
@@ -20,7 +25,7 @@
 
 .navbar-expand-lg .navbar-collapse{
     @include minLaptop{
-        max-width: 370px;
+        max-width: 400px;
     }
 }
 

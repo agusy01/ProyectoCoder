@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist&display=swap");
+#botonCarrito {
+  border: 0;
+  margin-left: 10px;
+  mix-blend-mode: multiply;
+  filter: brightness(1.1); }
+
 .header {
   background-color: #ece8e5;
   border-bottom: solid lightgrey 2px; }
@@ -12,7 +18,7 @@
 
 @media screen and (min-width: 1024px) {
   .navbar-expand-lg .navbar-collapse {
-    max-width: 370px; } }
+    max-width: 400px; } }
 
 .dropdown-toggle::after {
   vertical-align: .155em; }

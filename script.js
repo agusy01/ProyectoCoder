@@ -1,5 +1,7 @@
 localStorage.setItem('carrito', JSON.stringify([]))
-let divProductos = document.getElementById("divProductos")
+let divProductosSuculentas = document.getElementById("divProductosSuculentas")
+let divProductosCactus = document.getElementById("divProductosCactus")
+let divProductosAccesorios = document.getElementById("divProductosAccesorios")
 let botonCarrito = document.getElementById("botonCarrito")
 let modalBody = document.getElementById("modal-body")
 let botonFinalizarCompra = document.getElementById("botonFinalizarCompra")
@@ -54,7 +56,7 @@ fetch('../productos.json')
         </div>
         `
     });
-    dataProductos.filter((productoEnArray) => productoEnArray.id >9 && productoEnArray.id <= 19).forEach((productoEnArray, indice) => {
+    dataProductos.filter((productoEnArray) => productoEnArray.id >10 && productoEnArray.id <= 20).forEach((productoEnArray, indice) => {
         document.getElementById(`boton${indice}`).addEventListener('click', () => {
             if(productos.find(producto => producto.nombre == productoEnArray.nombre)) {
                 let index = productos.findIndex(producto => producto.nombre == productoEnArray.nombre)
@@ -72,8 +74,8 @@ fetch('../productos.json')
 
 fetch('../productos.json')
 .then(response => response.json())
-.then(dataProductos => {
-    dataProductos.filter((productoEnArray) => productoEnArray.id >= 21).forEach((productoEnArray, indice)=> {
+.then(dataProductosAccesorios => {
+    dataProductosAccesorios.filter((productoEnArray) => productoEnArray.id > 20).forEach((productoEnArray, indice)=> {
 
         divProductosAccesorios.innerHTML += `
         <div class="card border-success mb-3" id="producto${indice}" style="max-width: 20rem; margin:8px">
@@ -86,7 +88,7 @@ fetch('../productos.json')
         </div>
         `
     });
-    dataProductos.filter((productoEnArray, indice) => indice <= 9).forEach((productoEnArray, indice) => {
+    dataProductosAccesorios.filter((productoEnArray ) => productoEnArray.id > 20).forEach((productoEnArray, indice) => {
         document.getElementById(`boton${indice}`).addEventListener('click', () => {
             if(productos.find(producto => producto.nombre == productoEnArray.nombre)) {
                 let index = productos.findIndex(producto => producto.nombre == productoEnArray.nombre)

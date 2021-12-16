@@ -435,6 +435,9 @@ ul li .product-details p {
     border-radius: 27px 27px 27px 27px;
     padding: 5px; }
 
+.justify-content-md-center {
+  width: 100%; }
+
 .imgStoreOut {
   width: 25rem;
   border-radius: 33px 33px 33px 33px; }

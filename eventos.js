@@ -63,7 +63,6 @@ function cargarProductosModal(productosDelStorage) {
                 </div>
             <div class="col-md-8">
                 <div class="card-body">
-               
 
                 <h5 class="card-title">${productoCarrito.nombre}</h5>
                 <div class="row">
@@ -94,4 +93,5 @@ botonFinalizarCompra.addEventListener('click', () => {
     localStorage.setItem('carrito', JSON.stringify([]))
     swal("Gracias por su compra!", "Los productos seran enviados en la brevedad", "success");
 })
+
 

@@ -28,7 +28,7 @@ function cargarEventosModal(productosDelStorage) {
     productosDelStorage.forEach((productoCarrito, indice) => {
         document.getElementById(`sum${indice}`).addEventListener('click', () => {
             console.log()
-            if(productos[indice].cant < productos[indice].stock) {
+            if(productos[indice].cant ) {
                 productos[indice].cant++
                 localStorage.setItem('carrito', JSON.stringify(productos))
                 cargarProductosModal(JSON.parse(localStorage.getItem('carrito')))
@@ -59,7 +59,7 @@ function cargarProductosModal(productosDelStorage) {
             <div class="card border-primary mb-3" id ="productoCarrito${indice}" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="./img/${productoCarrito.img}" class="img-fluid rounded-start" alt="...">
+                        <img src="../img/${productoCarrito.img}" class="img-fluid rounded-start" alt="...">
                 </div>
             <div class="col-md-8">
                 <div class="card-body">
@@ -70,7 +70,7 @@ function cargarProductosModal(productosDelStorage) {
                     <button class= "btn btn-outline-secondary" id="sum${indice}"><i class="fas fa-plus"></i></button>
                     <button class= "btn btn-outline-secondary" id="rest${indice}"><i class="fas fa-minus"></i></button> 
                 </div>
-                <p class="card-text">$${new Intl.NumberFormat("de-DE").format(productoCarrito.precio * productoCarrito.cant)}</p> 
+                <p class="card-text">$${(productoCarrito.precio * productoCarrito.cant)}</p> 
                 <button class= "btn btn-danger" id="botonEliminar${indice}"><i class="fas fa-trash-alt"></i></button>
             </div>
             </div>

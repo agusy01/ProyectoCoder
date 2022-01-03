@@ -2,20 +2,20 @@
     {
         "id": 1,
         "nombre": "Succulent",
-        "precio": "8.00",
-        "img": "suculenta 3.png"
+        "img": "succulent.png",
+        "precio": 8.00
     },
     {
         "id": 2,
         "nombre": "Beautiful Succulent",        
         "precio": 15.00,
-        "img": "suculenta 2.png"
+        "img": "beautifulSucculent.png"
     },
     {
         "id": 3,
         "nombre": "Mini Succulent",
         "precio": 5.00,
-        "img": "suculenta 1.png"
+        "img": "miniSucculent.png"
     },
     {
         "id": 4,

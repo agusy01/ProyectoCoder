@@ -51,24 +51,24 @@ function cargarEventosModal(productosDelStorage) {
 function cargarProductosModal(productosDelStorage) {
 
     modalBody.innerHTML = " "  
-    productosDelStorage.forEach((productoEnArray, indice) => {
+    productosDelStorage.forEach((productoCarrito, indice) => {
         
         modalBody.innerHTML += `
             <div class="card border-primary mb-3" id ="productoCarrito${indice}" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="../img/${productoEnArray.img}" class=" rounded-start" alt="...">
+                        <img src="../img/${productoCarrito.img}" class=" rounded-start" alt="...">
                 </div>
             <div class="col-md-8">
                 <div class="card-body">
 
-                <h5 class="card-title">${productoEnArray.nombre}</h5>
+                <h5 class="card-title">${productoCarrito.nombre}</h5>
                 <div class="row">
-                    <p class="card-text">Cantidad: ${productoEnArray.cant}</p>
+                    <p class="card-text">Cantidad: ${productoCarrito.cant}</p>
                     <button class= "btn btn-outline-secondary" id="sum${indice}"><i class="fas fa-plus"></i></button>
                     <button class= "btn btn-outline-secondary" id="rest${indice}"><i class="fas fa-minus"></i></button> 
                 </div>
-                <p class="card-text">$${productoEnArray.precio}</p> 
+                <p class="card-text">$${productoCarrito.precio}</p> 
                 <button class= "btn btn-danger" id="botonEliminar${indice}"><i class="fas fa-trash-alt"></i></button>
             </div>
             </div>

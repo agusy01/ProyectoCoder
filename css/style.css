@@ -76,8 +76,6 @@ div main article div:hover {
       .main__titulo {
         font-size: 8vw; } }
 
-.row > * {
-  padding-right: calc(var(--bs-gutter-x) * 2.3); }
 
 /* SECTION 1 */
 .section {
@@ -240,6 +238,10 @@ a {
 
 h2 {
   font-size: 1em; }
+
+.botonSumRes {
+  width: 30%;
+  margin: 0px 10px; }
 
 .rounded-start {
   width: 100%; }

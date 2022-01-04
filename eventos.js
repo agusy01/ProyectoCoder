@@ -1,3 +1,4 @@
+/* Precio compra total */
 function compraTotal(productosDelStorage) {
     acumulador = 0;
     productosDelStorage.forEach((productoCarrito) => {
@@ -12,6 +13,7 @@ function compraTotal(productosDelStorage) {
     }
 }
 
+/* Carga de eventos al modal */
 function cargarEventosModal(productosDelStorage) {
 
     productosDelStorage.forEach((productoCarrito, indice) => {
@@ -48,6 +50,7 @@ function cargarEventosModal(productosDelStorage) {
     })
 }
 
+/* Carga de productos al modal */
 function cargarProductosModal(productosDelStorage) {
 
     modalBody.innerHTML = " "  
@@ -65,8 +68,8 @@ function cargarProductosModal(productosDelStorage) {
                 <h5 class="card-title">${productoCarrito.nombre}</h5>
                 <div class="row">
                     <p class="card-text">Cantidad: ${productoCarrito.cant}</p>
-                    <button class= "btn btn-outline-secondary" id="sum${indice}"><i class="fas fa-plus"></i></button>
-                    <button class= "btn btn-outline-secondary" id="rest${indice}"><i class="fas fa-minus"></i></button> 
+                    <button class= "btn btn-outline-secondary botonSumRes" id="sum${indice}"><i class="fas fa-plus "></i></button>
+                    <button class= "btn btn-outline-secondary botonSumRes" id="rest${indice}"><i class="fas fa-minus"></i></button> 
                 </div>
                 <p class="card-text">$${productoCarrito.precio}</p> 
                 <button class= "btn btn-danger" id="botonEliminar${indice}"><i class="fas fa-trash-alt"></i></button>
@@ -81,14 +84,18 @@ cargarEventosModal(productosDelStorage)
 compraTotal(productosDelStorage)
 }
 
+/* boton carrito para abrir modal */
 botonCarrito.addEventListener('click', () => {
     let productosDelStorage = JSON.parse(localStorage.getItem('carrito'))
     cargarProductosModal(productosDelStorage)
 })
 
+/* Boton finalizar compra */
 botonFinalizarCompra.addEventListener('click', () => {
     localStorage.setItem('carrito', JSON.stringify([]))
     swal("Gracias por su compra!", "Los productos seran enviados en la brevedad", "success");
 })
+
+
 
 

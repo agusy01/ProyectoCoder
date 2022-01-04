@@ -7,8 +7,7 @@ let modalBody = document.getElementById("modal-body")
 let botonFinalizarCompra = document.getElementById("botonFinalizarCompra")
 let parrafoCompra = document.getElementById('precioTotal')
 let acumulador;
-let validateMail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/;
-let validateNumber = /^[0-9]{10}$/;
+
 
 fetch('../productos.json')
 .then(response => response.json())

@@ -97,5 +97,3 @@ botonFinalizarCompra.addEventListener('click', () => {
 })
 
 
-
-

@@ -1,87 +1,49 @@
 @import "./responsive";
 @import "./colores";
 
-.col-4{
-    margin-top: 18px;
-    margin-left: 100px;
-    @include tablet{
-        margin-bottom: 50px;
-    }
-    @include movil{
-        width: 300px;
-    }
+
+    
+form label, form input, form textarea{
+    display: block;
+    margin-top: 10px;
+    width: 80%
 }
 
-.col-8{
-    max-width: 550px;
+form input, form textarea{ 
+    padding: 10px;
+    border: solid 1px #BDC7D8; 
 }
 
-.orden{
+.mainForm{
     display: flex;
     justify-content: center;
 }
 
-.row{
-    @include tablet{
-        justify-content: center;
-    }
-}
-.formulario{
-    padding: 0px;
-}
-.formulario__div { 
-	margin: 15px 0 0 0;
+.divTituloForm{
+    width: 40%;
 }
 
-.formulario__div p { 
-	padding: 0 0 4px 0;
+.tituloForm{
+    text-align: center;
+    margin: 40px 0px ;
+    
 }
 
-.formulario__div span { 
-	float: left; 
-    width: 150px; 
-    text-align: left;
+.formGeneral{
+    width: 50%;
 }
 
-.formulario__div input, .formulario__div textarea {
-	padding: 5px; 
-	width: 299px; 
-	font: 100% arial; 
-	border: 1px solid #E5E5DB;
-	background: #FFF; 
-	color: #47433F;
-    @include movil{
-        max-width: 240px;
-    }
+.button {
+    background-color: #00BFFF ;
+    border-color: #3ac162;
+    font-weight: bold;
+    padding: 12px 15px;
+    color: #ffffff;
+}
+.errorMsg {
+    color: #cc0000;
+    margin-bottom: 10px;
+    display:none;
 }
 
-.formulario__div .submit { 
-	font: 100% arial; 
-	border-radius: 25px;
-    border: 1px solid; 
-    width: 100px; 
-    margin: 0 0 0 150px; 
-    height: 33px;
-    padding: 2px 0 3px 0;
-    cursor: pointer; 
-    background: #000; 
-    color: #fff;
-}
-
-.formulario__div textarea, .formulario__div select { 
-	font: 100% arial; 
-    width: 299px;
-}
-
-.formulario__div select { 
-	width: 310px;
-}
-
-.formulario__div .checkbox { 
-	margin: 4px 0; 
-    padding: 0; 
-    width: 14px;
-    border: 0;
-    background: none;
-}
-
+/

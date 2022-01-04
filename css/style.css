@@ -241,6 +241,9 @@ a {
 h2 {
   font-size: 1em; }
 
+.rounded-start {
+  width: 100%; }
+
 .mainStore {
   display: flex;
   justify-content: space-around;

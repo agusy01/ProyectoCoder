@@ -75,6 +75,7 @@ function cargarProductosModal(productosDelStorage) {
             </div>
         </div>
     `
+    
 })
 cargarEventosModal(productosDelStorage)
 compraTotal(productosDelStorage)

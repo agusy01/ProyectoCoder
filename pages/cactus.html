@@ -37,7 +37,7 @@
                         <a class="nav-link active" href="../pages/contactus.html">Contact Us</a>
                         <div>
 
-                            <button id="botonCarrito"><i class="fas fa-shopping-cart fa-2x"></i></button>
+                            <button id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModal"><i class="fas fa-shopping-cart fa-2x"></i></button>
                         </div>
                         
                     </div>
@@ -47,142 +47,50 @@
     </header>
 
 <!--FIN DEL HEADER -->
+<main>
 
-<div id="divProductosCactus" class="row justify-content-md-center"></div>
+    <div id="divProductosCactus" class="row justify-content-md-center"></div>
 
-<div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body" id="modal-body">
+    <div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal-body">
         
-            </div>
-            <div class="row ml-ato">
-                <p id="precioTotal"></p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="botonFinalizarCompra">Finalizar Compra</button>
+                </div>
+                <div class="row ml-ato">
+                    <p id="precioTotal"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="botonFinalizarCompra">Finalizar Compra</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-    <!-- <main class="mainStore">
-        <ul class="mainStore__categoryListing">
-            <li class="mainStore__categoryListing__item">
-                <a class="prod-image" href="#">
-                    <img src="../img/cactus 4.png" />
-                </a>
-                <div class="product-details">
-                    <p><h2>Star Cactus</h2></p>
-                    <p class="price">$10.00</p>
-                </div>
-            </li>
-            <li class="mainStore__categoryListing__item">
-                <a class="prod-image" href="#">
-                    <img src="../img/cactus 2.png" />
-                </a>
-                <div class="product-details">
-                    <p><h2>Pinky Cactus</h2></p>
-                    <p class="price">$12.00</p>
-                </div>
-            </li>
-            <li class="mainStore__categoryListing__item">
-                <a class="prod-image" href="#">
-                    <img src="../img/cactus 3.png" />
-                </a>
-                <div class="product-details">
-                    <p><h2>Flower Cactus</h2></p>
-                    <p class="price">$9.00</p>
-                </div>
-            </li>
-            <li class="mainStore__categoryListing__item">
-                <a class="prod-image" href="#">
-                    <img src="../img/cactus 5.png" />
-                </a>
-                <div class="product-details">
-                    <p><h2>Gentle Cactus</h2></p>
-                    <p class="price">$7.00</p>
-                </div>
-            </li>
-            <li class="mainStore__categoryListing__item">
-                <a class="prod-image" href="#">
-                    <img src="../img/cactus 6.png" />
-                </a>
-                <div class="product-details">
-                    <p><h2>Prism Cactus</h2></p>
-                    <p class="price">$9.00</p>
-                </div>
-            </li>
-            <li class="mainStore_categoryListing__item">
-                <a class="prod-image" href="#">
-                    <img src="../img/cactus 7.png" />
-                </a>
-                <div class="product-details">
-                    <p><h2>Light Cactus</h2></p>
-                    <p class="price">$6.00</p>
-                </div>
-            </li>
-            <li class="mainStore_categoryListing__item">
-                <a class="prod-image" href="#">
-                    <img src="../img/cactus 8.png" />
-                </a>
-                <div class="product-details">
-                    <p><h2>Mini Cactus</h2></p>
-                    <p class="price">$3.00</p>
-                </div>
-            </li>
-            <li class="mainStore_categoryListing__item">
-                <a class="prod-image" href="#">
-                    <img src="../img/cactus 9.png" />
-                </a>
-                <div class="product-details">
-                    <p><h2>Pretty Cactus</h2></p>
-                    <p class="price">$5.00</p>
-                </div>
-            </li>
-            <li class="mainStore_categoryListing__item">
-                <a class="prod-image" href="#">
-                    <img src="../img/cactus 10.png" />
-                </a>
-                <div class="product-details">
-                    <p><h2>Skull Cactus</h2></p>
-                    <p class="price">$12.00</p>
-                </div>
-            </li>
-            <li class="mainStore_categoryListing__item">
-                <a class="prod-image" href="#">
-                    <img src="../img/cactus 11.png" />
-                </a>
-                <div class="product-details">
-                    <p><h2>Windy Cactus</h2></p>
-                    <p class="price">$10.00</p>
-                </div>
-            </li>
-        </ul>
-    </main>  -->
-    <hr>
-    <footer class="footer">
-        <a href="../index.html">
+</main>
+
+<hr>
+<footer class="footer">
+    <a href="../index.html">
         <img src="../img/logo 2.png" alt="" class="footer__logo">
-        </a>
-        <div>
-            <nav class="footer__nav">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="../index.html">Introduction</a></li>
-                    <li><a href="../pages/AboutUs.html">Know About Us</a></li>
-                    <li><a href="../pages/store.html">Visit Store</a></li>
-                    <li><a href="../pages/ContactUs.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-        
-    </footer>
-    <hr>
+    </a>
+    <div>
+        <nav class="footer__nav">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../index.html">Introduction</a></li>
+                <li><a href="../pages/AboutUs.html">Know About Us</a></li>
+                <li><a href="../pages/store.html">Visit Store</a></li>
+                <li><a href="../pages/ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+<hr>
 
 
     <script src="../producto.js"></script>

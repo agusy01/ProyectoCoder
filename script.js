@@ -14,7 +14,7 @@ fetch('../productos.json')
     dataProductos.filter((productoEnArray) => productoEnArray.id <= 10).forEach((productoEnArray, indice)=> {
 
         divProductosSuculentas.innerHTML += `
-        <div class="card border-success mb-3" id="producto${indice}" style="max-width: 20rem; margin:8px">
+        <div class="card bg-light mb-3" id="producto${indice}" style="max-width: 20rem; margin:8px">
             <div class="card-header">${productoEnArray.nombre}</div>
             <img src="../img/${productoEnArray.img}" class="card-img-top" alt="...">
             <div class="card-body">
@@ -48,7 +48,7 @@ fetch('../productos.json')
     dataProductos.filter((productoEnArray) => productoEnArray.id >10 && productoEnArray.id <= 20).forEach((productoEnArray, indice)=> {
 
         divProductosCactus.innerHTML += `
-        <div class="card border-success mb-3" id="producto${indice}" style="max-width: 20rem; margin:8px">
+        <div class="card bg-light mb-3" id="producto${indice}" style="max-width: 20rem; margin:8px">
             <div class="card-header">${productoEnArray.nombre}</div>
             <img src="../img/${productoEnArray.img}" class="card-img-top" alt="...">
             <div class="card-body">
@@ -82,7 +82,7 @@ fetch('../productos.json')
     dataProductos.filter((productoEnArray) => productoEnArray.id > 20).forEach((productoEnArray, indice)=> {
 
         divProductosAccesorios.innerHTML += `
-        <div class="card border-success mb-3" id="producto${indice}" style="max-width: 20rem; margin:8px">
+        <div class="card bg-light mb-3" id="producto${indice}" style="max-width: 20rem; margin:8px">
             <div class="card-header">${productoEnArray.nombre}</div>
             <img src="../img/${productoEnArray.img}" class="card-img-top" alt="...">
             <div class="card-body">
